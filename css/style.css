@@ -782,7 +782,17 @@ a{   /* ссылки на другие экраны */
 .knop4{
     display: flex;
     flex-wrap: wrap;
-    gap: 23px;
+    gap: 0px 23px;
+}
+@media (max-width: 580px){
+    .knop4 div:nth-child(1){
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .knop4 div:nth-child(2){
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 }
 
 .sellers{                    /* нижний блок с продавцами */
