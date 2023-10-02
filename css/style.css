@@ -245,7 +245,7 @@ section{
 .neobxtds{
     display: flex;
     flex-wrap: wrap;
-    gap: 31px;
+    gap: /*31px;*/calc(2.3vw - 2px);
 }
 .neobxgr{
     display: flex;
