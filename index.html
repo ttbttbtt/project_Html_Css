@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+    
+</head>
+
+<body>
+
+    <!----------------------------------------------------------->
+    <header>                       <!-- хедер -->
+        <div class="headerstr1">   <!-- хедер строка1 -->
+            <div class="location">
+                <div>
+                    <img src="./fonts/pin.png" alt="">
+                </div>
+                <div class="city">
+                    <div>Алматы</div>
+                    <!-- пунктир не прибивается к Алматы ???
+                    <div>
+                        <img src="./fonts/Line.png" alt="">
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div id="bonus">Бесплатная доставка заказов до конца декабря!</div>
+        </div>
+
+        <div class="headerstr2">                             <!-- хедер строка2 -->
+            <img id="ezy" src="./fonts/logo 2.1.png" alt="">
+            <div class="headermenu">                         <!-- кликабельное меню -->
+                <a href="#">О нас</a>
+                <a href="#">Помощь</a>
+                <a href="#">Продавцу</a>
+                <a href="#">Покупателю</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="detals">
+                <div class="detal">
+                    <div class="detaltxt">                       <!-- поле для ввода (подсказка серым, исчезает) -->
+                        <form action="#">
+                            <label>
+                                <input type="text" name="vvod" placeholder="Введите номер детали, название или VIN">
+                            </label>
+                        </form>
+                    </div>
+                    <div class="detalclocklupa">                 <!-- часы и лупа -->
+                        <div class="detalclock">
+                            <img src="./fonts/Group.png" alt="">
+                        </div>
+                        <a href="#" class="detallupa">
+                            <img src="./fonts/search.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!--
+                <div>
+                    <img src="./fonts/Vector 10.png" alt="">
+                </div>
+                -->
+            </div>
+            <div class="components">                         <!-- корзина и аккаунт -->
+                <a href="#" class="component1">
+                    <img src="./fonts/Component 1.png" alt="">
+                </a>
+                <a href="#" class="component2">
+                    <img src="./fonts/Component 2.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="headerstr3bg">                               <!-- хедер строка3 фон -->
+            <div class="headerstr3">                             <!-- хедер строка3 -->
+                <div class="butt">Каталог</div>
+                <div class="butt">ТО
+                    / фильтра</div>
+                <div class="butt">Тормозная
+                    система</div>
+                <div class="butt">Двигатель
+                    / выхлоп</div>
+                <div class="butt">Подвеска
+                    / рулевое</div>
+                <div class="butt">Коробка
+                    передач</div>
+                <div class="butt">Охлождение
+                    / отопление</div>
+                <div class="butt">Электрика
+                    / освещение</div>
+                <div class="butt">Кузов
+                    / элементы</div>
+
+            </div>
+        </div>
+    </header>
+
+    <!------------------------------ Экран главный ------------------------------>
+    <div class="sec1">
+        <div class="biryuza">                              <!-- бирюза -->
+            <div class="lightbiryuza">                     <!-- светло-бирюза -->
+                <h1 class="center">подобрать детали</h1>
+                <h4 class="center">найдите недостающие детали именно на ваше транспортное стредство</h4>
+                <form class="sec1form center" action="#">
+                    <div class="fall">                        <!-- выпадающие списки -->
+                        <div>
+                            <select name="year" size="1">
+                                <option selected disabled>ГОД ВЫПУСКА</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select name="marka" size="1">
+                                <option selected disabled>МАРКА</option>
+                                <option value="1">volkswagen</option>
+                                <option value="2">hyundai</option>
+                                <option value="3">toyota</option>
+                                <option value="4">nissan</option>
+                                <option value="5">ford</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select name="model" size="1">
+                                <option selected disabled>МОДЕЛЬ</option>
+                                <option value="1">Caddy</option>
+                                <option value="2">California</option>
+                                <option value="3">Caravelle</option>
+                                <option value="4">Multivan</option>
+                                <option value="5">Tiguan</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select name="kuzov" size="1">
+                                <option selected disabled>ТИП КУЗОВА</option>
+                                <option value="1">Седан</option>
+                                <option value="2">Хэтчбек</option>
+                                <option value="3">Универсал</option>
+                                <option value="4">Кроссовер</option>
+                                <option value="5">Внедорожник</option>
+                            </select>
+                        </div>
+                    </div>
+                    <!-- кнопка НАЙТИ ДЕТАЛИ -->
+                    <!-- <div class="find butt center red round">
+                        <input type="submit" value="НАЙТИ ДЕТАЛИ">
+                    </div> -->
+                    <div class="find butt center center-t center-v red round fw-700">НАЙТИ ДЕТАЛИ</div>
+                </form>
+            </div>
+            <!----------------------------------------------------------->
+
+            <div class="dangls">                             <!-- болтающиеся вкладки -->
+                <div class="dangl butt">
+                    <img src="./fonts/Group 182.png" alt="">
+                    <div>Выбирайте по цене, скорости<br>доставки или расположению</div>
+                </div>
+                <div class="dangl butt">
+                    <img src="./fonts/Group 182 (1).png" alt="">
+                    <div>589 837<br>запчастей и масел в каталоге</div>
+                </div>
+                <div class="dangl butt">
+                    <img src="./fonts/Group 182 (2).png" alt="">
+                    <div>Средний рейтинг<br>продавцов 4.83 из 5</div>
+                </div>
+                <div class="dangl butt">
+                    <img src="./fonts/Group 182 (3).png" alt="">
+                    <div>Подать объявление</div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------------------------------------------->
+
+        <div class="hits">                             <!-- Хиты продаж -->
+            <h2 class="fw-700">Хиты продаж</h2>
+            <div class="hit">
+                <div class="hititem butt">
+                    <img src="./fonts/img.png" alt="">
+                    <div class="fw-700">12 500 тг</div>
+                    <div>RENAULT Корпус фильтра<br>масляного (с радиатором)</div>
+                </div>
+                <div class="hititem butt">
+                    <img src="./fonts/img.png" alt="">
+                    <div class="fw700">12 500 тг</div>
+                    <div>RENAULT Корпус фильтра<br>масляного (с радиатором)</div>
+                </div>
+                <div class="hititem butt">
+                    <img src="./fonts/img.png" alt="">
+                    <div class="fw-700">12 500 тг</div>
+                    <div>RENAULT Корпус фильтра<br>масляного (с радиатором)</div>
+                </div>
+                <div class="hititem butt">
+                    <img src="./fonts/img.png" alt="">
+                    <div class="fw-700">12 500 тг</div>
+                    <div>RENAULT Корпус фильтра<br>масляного (с радиатором)</div>
+                </div>
+                <div class="hititem butt">
+                    <img src="./fonts/img.png" alt="">
+                    <div class="fw-700">12 500 тг</div>
+                    <div>RENAULT Корпус фильтра<br>масляного (с радиатором)</div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="neobx">                                    <!-- Необходимое  -->
+            <h2 class="fw-700">Необходимое для каждого авто </h2>
+            <div class="neobxtds">                             <!-- Необходимое группа стобцов  -->
+
+                <!----------------------------------------------------------->
+
+                <div class="neobxgr">                          <!-- Необходимое группа левая  -->
+                    <div class="neobxitem butt">                    <!-- Свечи  -->
+                        <div class="neobxitemleft">
+                            <h3 class="fw-700">Свечи</h3>
+                            <span>Свечи зажигания, свечи<br>накала</span>
+                        </div>
+                        <div class="neobxitemright">
+                            <img class="sv" src="./fonts/Layer 0 1.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="neobxitem">                    <!-- Моторные масла  -->
+                        <div class="neobxitemleft">
+                            <h3 class="fw-700">Моторные масла</h3>
+                            <span>Свечи зажигания, свечи<br>накала</span>
+                            <div class="litr">
+                                <!-- <div class="butt fw-500">1 л</div>
+                                <div class="butt fw-500">4 л</div>
+                                <div class="butt fw-500">5 л</div> -->
+                                <a class="butt fw-500" href="./ekr4.html">1 л</a>
+                                <a class="butt fw-500" href="./ekr5.html">4 л</a>
+                                <a class="butt fw-500" href="./ekr6.html">5 л</a>
+                            </div>
+                        </div>
+                        <div class="neobxitemright">
+                            <img class="oil" src="./fonts/Layer 0 1 (1).png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="neobxitem butt">                    <!-- Кузовные запчасти  -->
+                        <div class="neobxitemleft">
+                            <h3 class="fw-700">Кузовные запчасти</h3>
+                            <span>Свечи зажигания, свечи<br>накала</span>
+                        </div>
+                        <div class="neobxitemright">
+                            <img class="sv" src="./fonts/Layer 0 1 (2).png" alt="">
+                        </div>
+                    </div>
+                </div>   <!-- Необходимое группа левая  -->
+
+                <!----------------------------------------------------------->
+
+                <div class="neobxgr">                          <!-- Необходимое группа в центре  -->
+
+                    <div class="neobxitem butt">                    <!-- Каталог ТО  -->
+                        <div class="neobxitemleft">
+                            <h3 class="fw-700">Каталог ТО</h3>
+                            <span>Свечи зажигания, свечи<br>накала</span>
+                        </div>
+                        <div class="neobxitemright">
+                            <img class="sv" src="./fonts/Layer 0 1 (3).png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="neobxitem butt">                    <!-- Каталог  -->
+                        <div class="neobxitemleft">
+                            <h3 class="fw-700">Каталог</h3>
+                            <span>Свечи зажигания, свечи<br>накала</span>
+                        </div>
+                        <div class="neobxitemright">
+                            <img class="sv" src="./fonts/Layer 0 1 (4).png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="neobxitem butt">                    <!-- Коврики  -->
+                        <div class="neobxitemleft">
+                            <h3 class="fw-700">Коврики</h3>
+                            <span>Свечи зажигания, свечи<br>накала</span>
+                        </div>
+                        <div class="neobxitemright">
+                            <img class="sv" src="./fonts/Layer 0 1 (5).png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="neobxitem butt">                    <!-- Трансмиссионные масла  -->
+                        <div class="neobxitemleft">
+                            <h3 class="fw-700">Трансмиссионные масла</h3>
+                            <span>Свечи зажигания, свечи<br>накала</span>
+                        </div>
+                        <div class="neobxitemright">
+                            <img class="sv" src="./fonts/Layer 0 1 (6).png" alt="">
+                        </div>
+                    </div>
+                </div>   <!-- Необходимое группа в центре  -->
+
+                <!----------------------------------------------------------->
+
+                <div class="neobxgr">                          <!-- Необходимое группа правая  -->
+
+                    <div class="neobxitem zel">                <!-- Поиск запчастей по VIN номеру авто  -->
+                        <h3 class="fw-700 txt-w">Поиск запчастей<br>по VIN номеру авто</h3>
+                        <div class="detals" id="gllupas">
+                            <div class="detal" id="gllupa">
+                                <div class="detaltxt">                       <!-- поле для ввода (подсказка серым, исчезает) -->
+                                    <form action="#">
+                                        <input id="glinput" type="text" name="vvod" placeholder="Введите номер детали, название или VIN">
+                                    </form>
+                                </div>
+                                <div class="detalclocklupa">                 <!-- часы и лупа -->
+                                    <a href="#" class="detallupa">
+                                        <img src="./fonts/search.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <img class="sv glimg" src="./fonts/Layer 0 1 (7).png" alt="">
+                    </div>
+
+                    <div class="neobxitem">                    <!-- АКБ  -->
+                        <div class="neobxitemleft">
+                            <h3 class="fw-700">АКБ</h3>
+                            <span>Свечи зажигания, свечи<br>накала</span>
+                            <div class="litr">
+                                <!-- <div class="butt fw-500 center-t line-h-100">Прямая<br>полярность</div>
+                                <div class="butt fw-500 center-t line-h-100">Обратная<br>полярность</div> -->
+                                <a class="butt fw-500 center-t line-h-100" href="./ekr2.html">Прямая<br>полярность</a>
+                                <a class="butt fw-500 center-t line-h-100" href="./ekr3.html">Обратная<br>полярность</a>
+                            </div>
+                        </div>
+                        <div class="neobxitemright">
+                            <img class="oil" src="./fonts/Layer 0 1 (8).png" alt="">
+                        </div>
+                    </div>
+                </div>   <!-- Необходимое группа правая  -->
+
+                <!----------------------------------------------------------->
+
+            </div>   <!-- Необходимое группа стобцов  -->
+        </div>   <!-- Необходимое  -->
+    </div>
+
+    <!----------------------------------------------------------->
+    <footer>                                           <!-- футер -->
+        <div class="footnach">                         <!-- футер начало -->
+            <img id="wheel" src="./fonts/wheel 1.png" alt="">
+            <h2 class="center center-t fw-700">Начните продавать на EZY Parts!</h2>
+            <h4 class="butt center center-t center-v fw-700">СТАТЬ ПРОДАВЦОМ</h4>   <!-- сделать ссылку??? -->
+            <img id="transmiss" src="./fonts/Transmission.svg" alt="">
+        </div>
+        <div class="reklama">                          <!-- футер реклама -->
+            <img id="banner" src="./fonts/banner.png" alt="">
+        </div>
+        <div class="public">                           <!-- футер паблики -->
+            <div class="halfleft">                     <!-- футер пункты меню -->
+                <div class="halfleft1">                <!-- футер пункты меню столбец1 -->
+                    <div class="butt">Каталог автозапчастей</div>
+                    <div class="butt">О компании</div>
+                    <div class="butt">Помощь</div>
+                    <div class="butt">Покупателю</div>
+                </div>
+                <div class="halfleft2">                <!-- футер пункты меню столбец2 -->
+                    <div class="butt">Продавцу</div>
+                    <div class="butt">Реклама на сайте</div>
+                    <div class="butt">Контакты</div>
+                </div>
+            </div>
+            <div class="halfright">                    <!-- футер соцсети и эмблема -->
+                <div class="halfright1">               <!-- футер соцсети -->
+                    <div class="butt"><img src="./fonts/vk.png" alt=""></div>
+                    <div class="butt"><img src="./fonts/facebook.png" alt=""></div>
+                    <div class="butt"><img src="./fonts/instagram.png" alt=""></div>
+                </div>
+                <div class="halfright2">               <!-- футер эмблема -->
+                    <div><img src="./fonts/logo 2.1.png" alt=""></div>
+                    <div id="dog">© 2021, EZY parts</div>   <!-- футер собачка -->
+                </div>
+            </div>
+        </div>
+        <div class="footend">                          <!-- футер мелочь пузатая в конце -->
+            <span>Используя ezyparts.kz, вы принимаете условия использования сайта</span>
+            <span>Разработка: busnesscenter.kz</span>
+            <span>Дизайн и верстка: vitaliypanchenko.pro</span>
+        </div>
+    </footer>
+
+    <!----------------------------------------------------------->
+
+</body>
+</html>

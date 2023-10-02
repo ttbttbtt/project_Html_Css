@@ -1,0 +1,1169 @@
+
+/*------------------------------ подключение шрифтов ------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet');
+
+/*------------------------------- общие параметры ------------------------------*/
+*{
+    margin:0;
+    padding:0;
+    color: var(--Dark, #333);
+    font-family: "Roboto";
+}
+section{
+    padding-left: calc(12.9vw - 36px);/*150px;*/
+}
+.butt{
+    cursor: pointer;   /* пальчик */
+}
+
+
+/*------------------------------ центровка, цвет фона, цвет границы, закругление, жирность ----------*/
+
+.center{
+    margin:0 auto;
+}
+.center-t{
+    text-align: center;
+}
+.center-v{
+    line-height: 250%;
+}
+.red{
+    background: var(--Accent, #E11C43);
+}
+.red-b{
+    border: 1px solid var(--Accent, #E11C43);
+}
+.grey-b{
+    border: 1px solid var(--Opacity-3, #F4E5E2);
+}
+.round{
+    border-radius: 100px;
+}
+.txt-w{
+    color: var(--White, #FFF);
+}
+.txt-s{
+    color: var(--Opacity-2, #867777); /* светлее для невыбранных */
+}
+.fw-700{
+    font-weight: 700;
+}
+.fw-500{
+    font-weight: 500;
+}
+.line-h-100{
+    line-height: 100%;
+}
+.line-h-150{
+    line-height: 150%;
+}
+
+
+/*------------------------------ экраны ------------------------------*/
+.sec1{
+    padding-bottom: /*calc(8.8vw);*/127px;
+}
+.sec2, .sec3, .sec4, .sec5, .sec6{
+    padding-top:  /*calc(2.9vw - 1px);*/40px;
+}
+.sec2{
+    padding-bottom:  calc(12.9vw - 36px);/*150px;*/;
+}
+.sec3{
+    padding-bottom:  /*calc(8.6vw);*/123px;
+}
+.sec4{
+    padding-bottom: /*calc(8vw);*/115px;
+}
+.sec5{
+    padding-bottom: /*calc(38vw);*/555px;
+}
+.sec6{
+    padding-bottom: /*calc(3.2vw);*/100px;
+}
+
+
+/*------------------------------ экран1 - главный ------------------------------*/
+.biryuza{
+    background: var(--Linear, linear-gradient(90deg, #4CB8C4 0%, #3CD3AD 100%));
+    width: calc(99vw);/*1140px;*/
+    padding-top: /*calc(3.5vw);*/49px;
+    padding-bottom: /*calc(11.6vw - 1px);*/166px;
+
+    margin-bottom: /*calc(5.4vw);*/77px;
+    position: relative;
+}
+.lightbiryuza{
+    border-radius: /*calc(1.4vw);*/20px;
+    background: rgba(255, 255, 255, 0.50);
+    backdrop-filter: /*blur(calc(3.8vw));*/blur(55px);
+    display: flex;
+    flex-direction: column;
+    gap: /*calc(0.7vw);*/10px;
+    padding-top: /*calc(1vw);*/15px;
+    padding-bottom: /*calc(1vw);*/15px;
+    margin-bottom: /*calc(3.5vw);*/49px;
+    margin-left: calc(12.9vw - 36px);/*150px;*/
+}
+.lightbiryuza h1, .lightbiryuza h4{
+    text-transform: uppercase;
+}
+.sec1form{
+    display: flex;
+    flex-direction: column;
+    gap: /*calc(1vw);*/15px;
+}
+.find{
+    width: /*calc(17.9vw - 1px);*/256px;
+    height: /*calc(2.9vw);*/41px;
+    font-size: 16px;                       /*??????????*/
+    color: white;
+}
+.fall{
+    display: flex;
+    flex-wrap: wrap;
+    gap: /*calc(1vw);*/15px;
+}
+.fall select{
+    width: /*calc(17.4vw);*/250px;
+    height: /*calc(2.9vw - 1px);*/40px;
+    border-radius: /*calc(0.4vw);*/5px;
+    border: 1px solid var(--Opacity-2, #867777);
+    background: var(--White, #FFF);
+    padding-left: 16px;
+    /* padding-left: calc(1.2vw); */
+}
+.fall option{
+    text-transform: uppercase;
+}
+
+
+.dangls{
+    display: flex;
+    flex-wrap: wrap;/*??????????*/
+    gap: /*calc(1.4vw);*/20px;
+    position: absolute;
+    /* left: 110px; */
+    /* top: 280px; */
+    left: 17%;
+    top: 74%;
+}
+@media (max-width: 1150px){
+    .dangls{
+        position: static;
+        margin-left: /*166px;*/calc(14.3vw - 41px);
+    }
+}
+.dangl{
+    display: flex;
+    flex-direction: column;
+    gap: /*calc(1vw);*/15px;
+    background: white;
+    box-shadow: 0px 5px 0px lightgrey;
+    justify-content: center;
+    align-items: center;
+    /* padding: 27px 10px; */
+    width: /*calc(15vw - 1px);*/220px;
+    height: /*calc(10vw);*/144px;
+    border-radius: 2%;
+}
+.dangl img{
+    width: /*calc(2.6vw);*/37.5px;
+    height: /*calc(2.6vw);*/37.5px;
+}
+.dangl div{
+    text-align: center;
+    font-size: 14px;
+    width: 205px;
+    height: 32px;
+}
+
+.hits{
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    padding-left: calc(12.9vw - 36px);/*150px;*/
+    width: /*1288px;*/calc(89.4vw);
+}
+.hits h2{
+    color: #18A7A7;
+    font-family: Roboto;
+    font-size: 22px;
+    line-height: 150%;
+}
+.hit{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.hititem{
+    border-radius: 20px;
+    border: 1px solid rgba(45, 121, 121, 0.20);
+    background: #FCFCFC;
+    box-shadow: 0px 10px 20px 0px rgba(42, 121, 122, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.hititem div:nth-child(2){
+    color: #18A7A7;
+    font-family: Roboto;
+    font-size: 22px;
+    line-height: 150%;
+    align-self: flex-start;
+}
+.hititem div:nth-child(3){
+    color: var(--Dark, #333);
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+
+
+.neobx{
+    margin-top: 100px;
+    padding-bottom: 127x;
+    padding-left: calc(12.9vw - 36px);/*150px;*/
+    width: /*1288px;*/calc(89.4vw);
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+.neobx h2{
+    color: #18A7A7;
+    font-size: 22px;
+    line-height: 150%;
+}
+.neobxtds{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 31px;
+}
+.neobxgr{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.neobxitem{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    background: rgba(45, 121, 121, 0.05);
+    /* width: 360px; */
+    padding-left: 29px;
+}
+.neobxitemleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.neobxitemleft h3{
+    font-size: 18px;
+    line-height: 150%;
+}
+.neobxitemleft span{
+    font-size: 14px;
+    line-height: 150%;
+}
+.sv{
+    width: 174px;
+    height: 136px;
+}
+.oil{
+    width: 174px;
+    height: 282px;
+}
+
+.litr{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 20px;
+}
+.litr div{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid #18A7A7;
+
+    color: #18A7A7;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 150%;
+}
+.litr a{
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid #18A7A7;
+
+    color: #18A7A7;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+
+.zel{
+    display: block;
+    padding-top: 30px;
+    border-radius: 10px;
+    background: #2D7979;
+}
+#gllupas{
+    border-bottom: none;
+    margin-top: 23px;
+}
+#gllupa{
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    gap: 5px;
+    width: /*295px;*/calc(4vw + 237px);
+    padding-left: /*20px;*/calc(1.3vw);
+}
+#glinput{
+    width: /*270px;*/calc(0vw + 231px);
+    border: none;
+}
+.glimg{
+    margin-left: /*127px;*/calc(10.9vw - 29px);
+}
+
+
+/*------------------------------ экран2 ------------------------------*/
+.sec2common{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    padding-left: 152px;
+}
+/*-- левая часть --*/
+.sec2left{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 100px;
+}
+.nardi{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.sec2 form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.towns select{
+    width: 160px;
+    border-radius: 5px;
+    border: 1px solid #1FAFAC;
+}
+.townscheck1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.check1{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.check1txt{                       /* Доставка из других регионов */
+    width: 141px;
+    font-size: 14px;
+}
+.price2{
+    font-size: 14px;
+}
+.price2 input{
+    width: 100px;
+    border: none;
+}
+.producter{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+.sost{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+.sort{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+.fotobox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+.nalzak{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+.resetfltr{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    font-size: 14px;
+}
+
+
+/*-- правая часть --*/
+.sec2right h1{
+    margin-top: 10px;
+}
+.fire{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 26px;
+}
+.sec2right .kolodki{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 11px;
+    margin-top: 15px;
+}
+.sec2right .kolodka{
+    width: 228px;
+    height: 287px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.sec2right .kolodka:nth-child(1), .sec2right .kolodka:nth-child(2), .sec2right .kolodka:nth-child(3), .sec2right .kolodka:nth-child(4){ /* фон */
+    background: rgba(31, 175, 172, 0.10);
+}
+.sec2right .kol{
+    width: 188px;
+    height: 119px;
+}
+
+.sec2right .cena{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: end;
+    justify-content: space-between;
+}
+.basket{
+    border-radius: 3px;
+    background: #00766C;
+    width: 49.195px;
+}
+
+
+/*------------------------------ экран3 ------------------------------*/
+.sec3common{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+    padding-left: 152px;
+}
+/*-- левая часть как на экране2 !!! --*/
+
+
+
+/*-- правая часть --*/
+.shins  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.shina{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    border: 1px solid var(--Opacity-1, #F7EEEC);
+    padding: 8px 6px;
+}
+.shfoto{
+    width: 135px;
+    height: 134px;
+}
+.shina:nth-child(1), .shina:nth-child(2){
+    background: #E9F7F7;
+}
+.shinatxt{
+    display: flex;
+    flex-direction: column;
+    /* gap: 36px; */
+    justify-content: space-between;
+}
+.shinatxt12{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.shinatxt1{
+    font-size: 18px;
+}
+.shinatxt2{
+    width: 372px;
+    height: 32px;
+    font-size: 14px;
+}
+.shinatxt3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    font-size: 14px;
+}
+.shinatxt3_3{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.shinacena{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+}
+.shinacena div:nth-child(1){
+    font-size: 18px;
+}
+.shinacena img{
+    width: 40px;
+    height: 43px;
+
+}
+
+
+/*-- правая правая часть --*/
+.sec3rightright .kolodki{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+.sec3rightright .kolodka{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 12px;
+    background: rgba(31, 175, 172, 0.10);
+}
+.sec3rightright .kolodka img{
+    width: 70px;
+    height: 70px;
+}
+.sec3rightright .kol3ekr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* .sec3rightright .cena{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-around;
+} */
+
+
+
+
+
+
+/*------------------------------ верхний блок экр 4,5,6 ------------------------------*/
+
+.bottlestexts{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    gap: 30px;
+    margin-bottom: 70px; /* !!! */
+}
+
+
+/*------------------------------ блок бутылок экр 4,5,6 ------------------------------*/
+
+.bottles{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;/*???*/
+}
+.bottle5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.bottle1 img{
+    width: /*555px;*/calc(40.8vw - 33px);
+    /* height: 411px; */
+}
+.bottle5 img{
+    width: 98px;
+    /* height: 98px; */
+}
+
+
+/*------------------------------ блок текстов экр 4,5,6 ------------------------------*/
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;/*???*/
+    gap: 9px;
+}
+.texts h1{
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.reyting{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    font-size: 14px;
+}
+.starsnum{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 5px;
+}
+.stars{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0px;
+}
+.stars img{
+    width: 23px;
+    height: 23px;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.texts .butt{
+    margin-top: 24px;    /* !!! */
+    margin-bottom: 33px; /* !!! */
+}
+.texts .butt{
+    width: 256px;
+    height: 41px;
+    font-size: 16px;
+    font-weight: 700px;
+}
+.spisok{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+}
+.spisok div{
+    font-weight: 500;
+}
+.spisok li{
+    list-style-position: inside;   /* Маркер является частью текстового блока и отображается в элементе списка */
+    padding-left: 10px;
+}
+
+
+/*------------------------------ блок кнопок экр 4,5,6 ------------------------------*/
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding-left: 53px;   /* !!! */
+    padding-bottom: 95px; /* !!! */
+}
+.buttons div:nth-child(2){
+    width: 338px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 700px;
+}
+.button3{   /* 3 кнопки */
+    display: flex;
+    flex-wrap: wrap;
+}
+.button3 div{
+    width: 338px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 500px;
+}
+a{   /* ссылки на другие экраны */
+    text-decoration: none;
+    color: var(--Dark, #333);
+}
+
+
+/*------------------------------ блок характеристик на экране6 ------------------------------*/
+
+.characteristics{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-left: 53px;   /* !!! */
+    margin-bottom: 100px;
+}
+.description{   /* описание */
+    width: /*555px;*/calc(22.7vw + 227px);
+    font-size: 18px;
+}
+.product{   /* производитель и наименование */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.proiz{   /* производитель */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 125px;
+}
+.proiz div{  /* производитель строки */
+    width: 210px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+}
+.generalchar{   /* Общие характеристики */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.generalchartxt{   /* Общие характеристики текст */
+    color: #000;
+    font-size: 18px;
+    font-weight: 500; /*500*/
+}
+.generalcharitems{   /* Общие характеристики. пункты */
+    display: flex;
+    flex-direction: column;
+}
+.item{   /* Общие характеристики. пункты. строки */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px 25px;
+    font-size: 14px;
+    line-height: 150%;
+}
+.item div:first-child{   /* Общие характеристики. пункты. строки. левая часть */
+    width: 313px;
+}
+.item div:nth-child(2){   /* Общие характеристики. пункты. строки. правая часть */
+    width: 286px;
+    font-weight: 500;
+}
+
+
+/*------------------------------ блок продавцов на экране4 ------------------------------*/
+.knop4{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 23px;
+}
+
+.sellers{                    /* нижний блок с продавцами */
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+    padding-left: 53px;   /* !!! */
+}
+.seller{                     /* строка продавца */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 84px;
+}
+.sellername div:first-child{   /* имя продавца. название фирмы */
+    font-size: 18px;
+    font-weight: 500;
+}
+.sellername div:nth-child(3){  /* имя продавца. количество отзывов */
+    font-size: 14px;
+}
+.deliveryall{                /* доставка блок */
+    display: flex;
+    flex-direction: column;
+}
+.delivery{                   /* доставка строка */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.deliverytxt{                /* доставка текст */
+    width: 102px;
+    font-size: 14px;
+}
+.deliveryvalue{              /* доставка Значение */
+    width: 146px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.deliveryprice{              /* доставка цена */
+    font-size: 18px;
+    font-weight: 500;
+}
+.knop{                       /* кнопки СЕРВИС и ВЫБРАТЬ */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 31px;
+}
+.knop div:nth-child(1){      /* кнопка СЕРВИС */
+    width: 150px;
+    height: 40px;
+}
+.knop div:nth-child(2){      /* кнопка ВЫБРАТЬ */
+    width: 150px;
+    height: 40px;
+}
+.knop1{                      /* кнопка СЕРВИС не показывать!!! */
+    border: 1px solid white;
+    cursor: default;         /* обычный курсор */
+}
+.knop1 a{                    /* кнопка СЕРВИС не показывать!!! */
+    color: white;
+    cursor: default;         /* обычный курсор */
+}
+
+
+/*------------------------------ футер ------------------------------*/
+
+footer{                                      /* футер */
+    background: var(--Opacity-1, #F7EEEC);
+    display: flex;
+    flex-direction: column;
+    padding-top: 46px;
+    padding-right: 0px;
+    /* margin-right: 0px; */
+    width: /*1440px;*/calc(99vw);
+    position: relative;
+}
+/* футер начало */
+/*
+.footnach{
+    position: relative;
+}
+*/
+.footnach h2{                                /* футер Начните продавать */
+    width: /*514px;*/calc(23.6vw + 174px);
+    color: #18A7A7;
+    font-size: /*50px;*/calc(2.7vw + 11px);
+    /* font-weight: 700; */
+    line-height: 100%;
+    margin-bottom: 30px;
+}
+.footnach h4{                                /* футер СТАТЬ ПРОДАВЦОМ */
+    color: var(--White, #FFF);
+    width: 397px;/*calc(-13vw + 208px);*/
+    /* height: 45px; */
+    font-size: 16px;
+    /* font-weight: 700; */
+    letter-spacing: 0.32px;
+    border-radius: 3px;
+    border: 1px solid #18A7A7;
+    background: #18A7A7;
+    margin-bottom: 45px;
+}
+@media (max-width: 320px) {
+    .footnach h4{
+        width: 250px;
+    }
+}
+
+#wheel{                                      /* футер колесо */
+    width: /*262px;*/calc(18.2vw);
+    height: /*252px;*/calc(17.5vw);
+    position: absolute;
+    top: /*-55px;*/calc(-2vw);
+    left: /*42px;*/calc(2.9vw);
+}
+#transmiss{                                  /* футер трансмиссия */
+    width: /*298.224px;*/calc(20.7vw);
+    height: /*171.213px;*/calc(11.8vw);
+    position: absolute;
+    top: /*100px;*//*169px;*/calc(-6.1vw + 189px);
+    right: 0px;
+}
+
+
+#banner{                                     /* футер реклама. красный баннер */
+    width: /*1440px;*/calc(99vw);
+    height: 100.33px;
+}
+
+
+.public{                                     /* футер паблики */
+    padding-left: calc(12.9vw - 36px);/*150px;*/   /* !!! */
+    /*padding-right: 150px;*/   /* !!! */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 322px;
+}
+.halfleft{                                   /* футер пункты меню */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 123px;
+}
+.halfleft1{                                  /* футер пункты меню столбец1 */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.halfleft2{                                  /* футер пункты меню столбец2 */
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+.halfright{                                  /* футер соцсети и эмблема */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 208px;
+}
+.halfright1{                                 /* футер соцсети */
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.halfright2{                                 /* футер эмблема */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+.halfright2 img{
+    width: 84px;
+    height: 44.149px;
+}
+#dog{                                        /* футер собачка */
+    width: 98px;
+    height: 18.059px;
+    text-align: right;
+    font-family: "Lato";
+    font-size: 12px;
+    font-style: normal;
+    line-height: 18px;
+}
+
+
+.footend{                                    /* футер мелочь пузатая в конце */
+    padding-left: calc(12.9vw - 36px);/*150px;*/   /* !!! */
+    font-family: Lato;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 30px;
+    margin-bottom: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 35px;
+}
+.footend span:first-child{
+    width: 555px;
+    height: 18px;
+}
+.footend span:nth-child(2){
+    width: 263px;
+    height: 18px;
+    text-align: right;
+}
+.footend span:nth-child(3){
+    width: 275px;
+    height: 18px;
+    text-align: right;
+}
+
+
+/*------------------------------ хедер ------------------------------*/
+
+.headerstr1{                     /* хедер строка1 */
+    background: linear-gradient(180deg, rgba(211, 211, 211, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #3F3F3F;
+    padding-top: 8.61px;
+    padding-bottom: 16.95px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 321px;
+    width: /*1288px;*/calc(89.4vw);
+    /* height: 40px; */
+    padding-left: calc(12.9vw - 36px);/*150px;*/
+    align-items: center;
+}
+.city div:nth-child(1){          /* Алматы */
+    color: var(--White, #FFF);   
+    font-family: Roboto;
+    font-size: 12px;
+    line-height: 150%;
+}
+#bonus{                          /* Бесплатная доставка заказов до конца декабря! */
+    color: var(--White, #FFF);
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.7px;
+}
+/* пунктир не прибивается к Алматы ???
+.city{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4px;
+    justify-content: center;
+}
+.city img{
+    width: 44.5px;
+    height: 0px;
+}
+*/
+.city{
+    border-bottom: 1px dashed white;
+}
+.location{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10.31px;
+    align-items: center;
+}
+
+
+
+
+
+.headerstr2{                   /* хедер строка2 */
+    width: /*1288px;*/calc(89.4vw);
+    padding-left: calc(12.9vw - 36px);/*150px;*/
+    padding-top: 7px;
+    padding-bottom: 7.22px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px 59px;
+    align-items: center;
+}
+#ezy{
+    width: 101px;
+    height: 54px;
+}
+.headermenu{
+    display: flex;
+    flex-wrap: wrap;
+    gap: /*30px;*/calc(2.2vw - 2px);
+
+    font-size: 12px;
+    line-height: 150%;
+    height: 18px;
+}
+.headermenu a:nth-child(1){
+    width: 31px;
+}
+.headermenu a:nth-child(2){
+    width: 48px;
+}
+.headermenu a:nth-child(3), .headermenu a:nth-child(5){   /* через запятую одно свойство для двух элементов */
+    width: 56px;
+}
+.headermenu a:nth-child(4){
+    width: 70px;
+}
+
+
+.detals{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    border-bottom: 1px solid black;/*???*/
+}
+.detal{
+    display: flex;
+    flex-wrap: wrap;
+    gap: /*75.16px;*/calc(5.8vw - 8px);
+    align-items: center;
+}
+.detaltxt form label input{    /* Введите номер детали, название или VIN */
+    width: 274.838px;
+    color: var(--Opacity-2, #867777);
+    font-size: 12px;
+    line-height: 150%;
+    border: none;
+}
+
+.detalclocklupa{               /* часы и лупа */
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+
+.components{                   /* корзина и аккаунт */
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12.95px;
+}
+
+
+
+
+
+.headerstr3bg{                 /* хедер строка3 фон */
+    /* padding-left: 153px; */
+    padding-top: 11px;
+    padding-bottom: 11px;
+    background: #F5F5F5;
+    width: /*1440px;*/calc(99vw);
+}
+.headerstr3{                   /* хедер строка3 */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 65px;
+    align-items: center;
+
+    text-align: center;
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 100%;
+   
+    /* height: 28px; */
+
+    padding-left: calc(12.9vw - 36px);/*150px;*/
+}
+.headerstr3 div:nth-child(1){
+    width: 52px;
+    /* height: 21px; */
+}
+.headerstr3 div:nth-child(2){
+    width: 64px;
+}
+.headerstr3 div:nth-child(3){
+    width: 69px;
+}
+.headerstr3 div:nth-child(4){
+    width: 68px;
+}
+.headerstr3 div:nth-child(5){
+    width: 63px;
+}
+.headerstr3 div:nth-child(6){
+    width: 55px;
+}
+.headerstr3 div:nth-child(7){
+    width: 85px;
+}
+.headerstr3 div:nth-child(8){
+    width: 82px;
+}
+.headerstr3 div:nth-child(9){
+    width: 75px;
+}

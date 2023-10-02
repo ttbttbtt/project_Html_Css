@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Колодки тормозные дисковые</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./fonts/fonts.css">
+</head>
+
+<body>
+
+    <!----------------------------------------------------------->
+    <header>                       <!-- хедер -->
+        <div class="headerstr1">   <!-- хедер строка1 -->
+            <div class="location">
+                <div>
+                    <img src="./fonts/pin.png" alt="">
+                </div>
+                <div class="city">
+                    <div>Алматы</div>
+                    <!-- пунктир не прибивается к Алматы ???
+                    <div>
+                        <img src="./fonts/Line.png" alt="">
+                    </div>
+                    -->
+                </div>
+            </div>
+            <div id="bonus">Бесплатная доставка заказов до конца декабря!</div>
+        </div>
+
+        <div class="headerstr2">                             <!-- хедер строка2 -->
+            <img id="ezy" src="./fonts/logo 2.1.png" alt="">
+            <div class="headermenu">                         <!-- кликабельное меню -->
+                <a href="#">О нас</a>
+                <a href="#">Помощь</a>
+                <a href="#">Продавцу</a>
+                <a href="#">Покупателю</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="detals">
+                <div class="detal">
+                    <div class="detaltxt">                       <!-- поле для ввода (подсказка серым, исчезает) -->
+                        <form action="#">
+                            <label>
+                                <input type="text" name="vvod" placeholder="Введите номер детали, название или VIN">
+                            </label>
+                        </form>
+                    </div>
+                    <div class="detalclocklupa">                 <!-- часы и лупа -->
+                        <div class="detalclock">
+                            <img src="./fonts/Group.png" alt="">
+                        </div>
+                        <a href="#" class="detallupa">
+                            <img src="./fonts/search.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!--
+                <div>
+                    <img src="./fonts/Vector 10.png" alt="">
+                </div>
+                -->
+            </div>
+            <div class="components">                         <!-- корзина и аккаунт -->
+                <a href="#" class="component1">
+                    <img src="./fonts/Component 1.png" alt="">
+                </a>
+                <a href="#" class="component2">
+                    <img src="./fonts/Component 2.png" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="headerstr3bg">                               <!-- хедер строка3 фон -->
+            <div class="headerstr3">                             <!-- хедер строка3 -->
+                <div class="butt">Каталог</div>
+                <div class="butt">ТО
+                    / фильтра</div>
+                <div class="butt">Тормозная
+                    система</div>
+                <div class="butt">Двигатель
+                    / выхлоп</div>
+                <div class="butt">Подвеска
+                    / рулевое</div>
+                <div class="butt">Коробка
+                    передач</div>
+                <div class="butt">Охлождение
+                    / отопление</div>
+                <div class="butt">Электрика
+                    / освещение</div>
+                <div class="butt">Кузов
+                    / элементы</div>
+
+            </div>
+        </div>
+    </header>
+
+    <!------------------------------ Экран2 ------------------------------>
+    <div class="sec2">
+        
+        <!----------------------------------------------------------->
+        <div class="sec2common">                           <!-- экран разделённый на лев и прав часть -->
+
+            <!----------------------------------------------------------->
+            <div class="sec2left">                         <!-- левая часть с переключателями -->
+
+                <div class="nardi">                        <!-- нарды -->
+                    <div class="nard">
+                        <a href="#"><img src="./fonts/Group 196.png" alt=""></a>
+                    </div>
+                    <div class="nard">
+                        <a href="#"><img src="./fonts/Group 197.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="perekluch">                        <!-- переключатели сделать пальчик ??? -->
+                    <form action="#" name="forma">             <!-- форма -->
+
+                        <div class="townscheck1">              <!-- города и др. регионы -->
+                            <div class="towns">                <!-- города -->
+                                <select name="town" value="aa" size="1">
+                                    <option value="aa" selected>Алматы</option>
+                                    <option value="msk">Москва</option>
+                                    <option value="tsh">Ташкент</option>
+                                    <option value="sp">Санкт-Петербург</option>
+                                    <option value="sl">Сеул</option>
+                                </select>
+                            </div>
+                            <div class="check1">               <!-- др.регионы -->
+                                <input type="checkbox" name="drreg" value="1">
+                                <div class="check1txt">Доставка из других регионов</div>
+                            </div>
+                        </div>
+
+                        <div class="price2 fw-500">            <!-- Цена -->
+                            <label>Цена <input type="number" name="cena2"></label>
+                        </div>
+
+                        <div class="producter">                <!-- Производитель -->
+                            <div class="fw-500">Производитель</div>
+                            <label><input type="checkbox" name="prodr" value="1">DENSO</label>
+                            <label><input type="checkbox" name="prodr" value="2">FEBI</label>
+                            <label><input type="checkbox" name="prodr" value="3">NGK</label>
+                            <label><input type="checkbox" name="prodr" value="4">NISSAN</label>
+                            <label><input type="checkbox" name="prodr" value="5">RENAULT</label>
+                            <label><input type="checkbox" name="prodr" value="6">VAG</label>
+                        </div>
+
+                        <div class="sost">                     <!-- Состяние -->
+                            <div class="fw-500">Состяние</div>
+                            <label><input type="radio" name="sostchoice" value="1">Все</label>
+                            <label><input type="radio" name="sostchoice" value="2">Новые</label>
+                            <label><input type="radio" name="sostchoice" value="3">Б/у</label>
+                        </div>
+
+                        <div class="sort">                     <!-- Сортировать -->
+                            <div class="fw-500">Сортировать</div>
+                            <label><input type="radio" name="sortchoice" value="1">по дате объявления</label>
+                            <label><input type="radio" name="sortchoice" value="2">по цене</label>
+                            <label><input type="radio" name="sortchoice" value="3">по рейтингу</label>
+                        </div>
+
+                        <div class="fotobox">                <!-- Только с фото, Доставка в бокс -->
+                            <label><input type="checkbox" name="foto" value="1">Только с фото</label>
+                            <label><input type="checkbox" name="box" value="2">Доставка в бокс</label>
+                        </div>
+
+                        <div class="nalzak">                 <!-- В наличии, На заказ -->
+                            <label><input type="radio" name="nalzakchoice" value="1">В наличии</label>
+                            <label><input type="radio" name="nalzakchoice" value="2">На заказ</label>
+                        </div>
+
+                        <div class="resetfltr">              <!-- Сбросить фильтры -->
+                            <!--   onclick="location.reload(); - обновить форму   -->
+                            <a href="#" onclick="location.reload();"><img src="./fonts/Vector.png" alt=""></a>
+                            <div>Сбросить фильтры</div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <!----------------------------------------------------------->
+            <div class="sec2right">                        <!-- правая часть с колодками -->
+
+                <div>Главная / Запчасти / Колодки тормозные дисковые</div>
+                <h1 class="fw-700">Колодки тормозные дисковые</h1>                <!-- h...??? -->
+                <div class="fire">
+                    <img src="./fonts/pngwing 1.png" alt="">
+                    <h3>Горящие предложения недели</h3>                <!-- h...??? -->
+                </div>
+
+                <div class="kolodki">
+                    <div class="kolodka">                              <!-- 1 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 2 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 3 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 4 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 5 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 6 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 7 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 8 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 9 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 10 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 11 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 12 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 13 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 14 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 15 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="kolodka">                              <!-- 16 -->
+                        <img src="./fonts/Rectangle 69.png" alt="">
+                        <div class="kol fw-700">Колодки тормозные дисковые</div>
+                        <div>Toyota Camry</div>
+                        <div class="cena">
+                            <div>99 999 тг.</div>
+                            <a href="#"><img class="basket" src="./fonts/Frame (1).png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------------------------------------->
+    </div>
+
+    <!----------------------------------------------------------->
+    <footer>                                           <!-- футер -->
+        <div class="footnach">                         <!-- футер начало -->
+            <img id="wheel" src="./fonts/wheel 1.png" alt="">
+            <h2 class="center center-t fw-700">Начните продавать на EZY Parts!</h2>
+            <h4 class="butt center center-t center-v fw-700">СТАТЬ ПРОДАВЦОМ</h4>   <!-- сделать ссылку??? -->
+            <img id="transmiss" src="./fonts/Transmission.svg" alt="">
+        </div>
+        <div class="reklama">                          <!-- футер реклама -->
+            <img id="banner" src="./fonts/banner.png" alt="">
+        </div>
+        <div class="public">                           <!-- футер паблики -->
+            <div class="halfleft">                     <!-- футер пункты меню -->
+                <div class="halfleft1">                <!-- футер пункты меню столбец1 -->
+                    <div class="butt">Каталог автозапчастей</div>
+                    <div class="butt">О компании</div>
+                    <div class="butt">Помощь</div>
+                    <div class="butt">Покупателю</div>
+                </div>
+                <div class="halfleft2">                <!-- футер пункты меню столбец2 -->
+                    <div class="butt">Продавцу</div>
+                    <div class="butt">Реклама на сайте</div>
+                    <div class="butt">Контакты</div>
+                </div>
+            </div>
+            <div class="halfright">                    <!-- футер соцсети и эмблема -->
+                <div class="halfright1">               <!-- футер соцсети -->
+                    <div class="butt"><img src="./fonts/vk.png" alt=""></div>
+                    <div class="butt"><img src="./fonts/facebook.png" alt=""></div>
+                    <div class="butt"><img src="./fonts/instagram.png" alt=""></div>
+                </div>
+                <div class="halfright2">               <!-- футер эмблема -->
+                    <div><img src="./fonts/logo 2.1.png" alt=""></div>
+                    <div id="dog">© 2021, EZY parts</div>   <!-- футер собачка -->
+                </div>
+            </div>
+        </div>
+        <div class="footend">                          <!-- футер мелочь пузатая в конце -->
+            <span>Используя ezyparts.kz, вы принимаете условия использования сайта</span>
+            <span>Разработка: busnesscenter.kz</span>
+            <span>Дизайн и верстка: vitaliypanchenko.pro</span>
+        </div>
+    </footer>
+
+    <!----------------------------------------------------------->
+    
+</body>
+</html>
