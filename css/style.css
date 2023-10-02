@@ -425,12 +425,15 @@ section{
     font-size: 14px;
 }
 
-
+input{
+    outline: none;
+}
 /*-- правая часть --*/
 /*------------------------------------------------*/
 .navigation{
     display: flex;
     flex-direction: row;
+    flex-shrink: 0;
     gap: 4px;
 }
 /*------------------------------------------------*/
@@ -633,7 +636,6 @@ section{
 .texts h1{
     font-size: 36px;
     font-style: normal;
-    font-weight: 500;
     line-height: normal;
 }
 .reyting{
@@ -679,9 +681,6 @@ section{
     gap: 10px;
     font-size: 14px;
 }
-.spisok div{
-    font-weight: 500;
-}
 .spisok li{
     list-style-position: inside;   /* Маркер является частью текстового блока и отображается в элементе списка */
     padding-left: 10px;
@@ -701,7 +700,6 @@ section{
     width: 338px;
     height: 50px;
     font-size: 16px;
-    font-weight: 700;
 }
 .button3{   /* 3 кнопки */
     display: flex;
@@ -711,7 +709,6 @@ section{
     width: 338px;
     height: 50px;
     font-size: 18px;
-    font-weight: 500;
 }
 a{   /* ссылки на другие экраны */
     text-decoration: none;
@@ -742,10 +739,9 @@ a{   /* ссылки на другие экраны */
     flex-wrap: wrap;
     gap: 3px 125px;
 }
-.proiz div{  /* производитель строки */
+.proiz div{  /* производитель стрОки */
     width: 210px;
     font-size: 14px;
-    font-weight: 500;
     line-height: normal;
 }
 .generalchar{   /* Общие характеристики */
@@ -756,7 +752,6 @@ a{   /* ссылки на другие экраны */
 .generalchartxt{   /* Общие характеристики текст */
     color: #000;
     font-size: 18px;
-    font-weight: 500; /*500*/
 }
 .generalcharitems{   /* Общие характеристики. пункты */
     display: flex;
@@ -774,7 +769,6 @@ a{   /* ссылки на другие экраны */
 }
 .item div:nth-child(2){   /* Общие характеристики. пункты. строки. правая часть */
     width: 286px;
-    font-weight: 500;
 }
 
 
@@ -809,7 +803,6 @@ a{   /* ссылки на другие экраны */
 }
 .sellername div:first-child{   /* имя продавца. название фирмы */
     font-size: 18px;
-    font-weight: 500;
 }
 .sellername div:nth-child(3){  /* имя продавца. количество отзывов */
     font-size: 14px;
@@ -830,11 +823,9 @@ a{   /* ссылки на другие экраны */
 .deliveryvalue{              /* доставка Значение */
     width: 146px;
     font-size: 14px;
-    font-weight: 500;
 }
 .deliveryprice{              /* доставка цена */
     font-size: 18px;
-    font-weight: 500;
 }
 .knop{                       /* кнопки СЕРВИС и ВЫБРАТЬ */
     display: flex;
@@ -881,7 +872,6 @@ footer{                                      /* футер */
     width: /*514px;*/calc(23.6vw + 174px);
     color: #18A7A7;
     font-size: /*50px;*/calc(2.7vw + 11px);
-    /* font-weight: 700; */
     line-height: 100%;
     margin-bottom: 30px;
 }
@@ -890,7 +880,6 @@ footer{                                      /* футер */
     width: 397px;/*calc(-13vw + 208px);*/
     /* height: 45px; */
     font-size: 16px;
-    /* font-weight: 700; */
     letter-spacing: 0.32px;
     border-radius: 3px;
     border: 1px solid #18A7A7;
