@@ -65,7 +65,7 @@ section{
 
 /*------------------------------ экраны ------------------------------*/
 .sec1{
-    padding-bottom: /*calc(8.8vw);*/127px;
+    padding-bottom: calc(8.8vw);/*127px;*/
 }
 .sec2, .sec3, .sec4, .sec5, .sec6{
     padding-top:  /*calc(2.9vw - 1px);*/40px;
@@ -74,16 +74,16 @@ section{
     padding-bottom:  calc(12.9vw - 36px);/*150px;*/;
 }
 .sec3{
-    padding-bottom:  /*calc(8.6vw);*/123px;
+    padding-bottom:  calc(8.6vw);/*123px;*/
 }
 .sec4{
-    padding-bottom: /*calc(8vw);*/115px;
+    padding-bottom: calc(8vw);/*115px;*/
 }
 .sec5{
-    padding-bottom: /*calc(38vw);*/555px;
+    padding-bottom: calc(38vw);/*555px;*/
 }
 .sec6{
-    padding-bottom: /*calc(3.2vw);*/100px;
+    padding-bottom: calc(3.2vw);/*100px;*/
 }
 
 
@@ -617,7 +617,7 @@ section{
     /* height: 411px; */
 }
 .bottle5 img{
-    width: 98px;
+    width: /*98px;*/calc(6.9vw - 1px);
     /* height: 98px; */
 }
 
@@ -701,7 +701,7 @@ section{
     width: 338px;
     height: 50px;
     font-size: 16px;
-    font-weight: 700px;
+    font-weight: 700;
 }
 .button3{   /* 3 кнопки */
     display: flex;
@@ -711,7 +711,7 @@ section{
     width: 338px;
     height: 50px;
     font-size: 18px;
-    font-weight: 500px;
+    font-weight: 500;
 }
 a{   /* ссылки на другие экраны */
     text-decoration: none;
@@ -795,7 +795,7 @@ a{   /* ссылки на другие экраны */
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 84px;
+    gap: 10px 84px;
 }
 .sellername div:first-child{   /* имя продавца. название фирмы */
     font-size: 18px;
@@ -829,7 +829,7 @@ a{   /* ссылки на другие экраны */
 .knop{                       /* кнопки СЕРВИС и ВЫБРАТЬ */
     display: flex;
     flex-wrap: wrap;
-    gap: 31px;
+    gap: 10px 31px;
 }
 .knop div:nth-child(1){      /* кнопка СЕРВИС */
     width: 150px;
