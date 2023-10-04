@@ -490,8 +490,8 @@ input{
 .sec3common{
     display: flex;
     flex-wrap: wrap;
-    gap: 26px;
-    padding-left: 152px;
+    gap: /*26px;*/calc(1.9vw - 1px);
+    padding-left: /*150px;*/calc(12.9vw - 36px);
 }
 /*-- левая часть как на экране2 !!! --*/
 
@@ -506,13 +506,13 @@ input{
 .shina{
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: /*15px;*/calc(0.9vw + 2px);
     border: 1px solid var(--Opacity-1, #F7EEEC);
     padding: 8px 6px;
 }
 .shfoto{
-    width: 135px;
-    height: 134px;
+    width: /*135px;*/calc(5.8vw + 46px);
+    /* height: 134px; */
 }
 .shina:nth-child(1), .shina:nth-child(2){
     background: #E9F7F7;
@@ -532,8 +532,8 @@ input{
     font-size: 18px;
 }
 .shinatxt2{
-    width: 372px;
-    height: 32px;
+    width: /*372px;*/calc(19.8vw + 87px);
+    /* height: 32px; */
     font-size: 14px;
 }
 .shinatxt3{
@@ -574,7 +574,7 @@ input{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: 12px;
+    gap: /*12px;*/calc(0.6vw + 3px);
     background: rgba(31, 175, 172, 0.10);
 }
 .sec3rightright .kolodka img{
