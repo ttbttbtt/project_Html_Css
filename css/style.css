@@ -90,7 +90,8 @@ section{
 /*------------------------------ экран1 - главный ------------------------------*/
 .biryuza{
     background: var(--Linear, linear-gradient(90deg, #4CB8C4 0%, #3CD3AD 100%));
-    width: calc(99vw);/*1140px;*/
+    /* width: 1140px;
+    width: calc(100vw); */
     padding-top: /*calc(3.5vw);*/49px;
     padding-bottom: /*calc(11.6vw - 1px);*/166px;
 
@@ -108,6 +109,7 @@ section{
     padding-bottom: /*calc(1vw);*/15px;
     margin-bottom: /*calc(3.5vw);*/49px;
     margin-left: calc(12.9vw - 36px);/*150px;*/
+    margin-right: calc(12.9vw - 36px);/*150px;*/
 }
 .lightbiryuza h1, .lightbiryuza h4{
     text-transform: uppercase;
@@ -126,10 +128,12 @@ section{
 .fall{
     display: flex;
     flex-wrap: wrap;
-    gap: /*calc(1vw);*/15px;
+    /* gap: 15px; */
+    gap: calc(1vw);
 }
 .fall select{
-    width: /*calc(17.4vw);*/250px;
+    /* width: 250px; */
+    width: calc(17.4vw);
     height: /*calc(2.9vw - 1px);*/40px;
     border-radius: /*calc(0.4vw);*/5px;
     border: 1px solid var(--Opacity-2, #867777);
@@ -187,7 +191,8 @@ section{
     flex-direction: column;
     gap: 33px;
     padding-left: calc(12.9vw - 36px);/*150px;*/
-    width: /*1288px;*/calc(89.4vw);
+    /* width: 1288px;
+    width: calc(89.4vw); */
 }
 .hits h2{
     color: #18A7A7;
@@ -233,10 +238,11 @@ section{
     margin-top: 100px;
     padding-bottom: 127x;
     padding-left: calc(12.9vw - 36px);/*150px;*/
-    width: /*1288px;*/calc(89.4vw);
+    /* width: 1288px;
+    width: calc(89.4vw); */
     display: flex;
     flex-direction: column;
-    gap: 54px;
+    gap: 31px;
 }
 .neobx h2{
     color: #18A7A7;
@@ -859,7 +865,8 @@ footer{                                      /* футер */
     padding-top: 46px;
     padding-right: 0px;
     /* margin-right: 0px; */
-    width: /*1440px;*/calc(99vw);
+    /* width: 1440px;
+    width: calc(100vw); */
     position: relative;
 }
 /* футер начало */
@@ -908,9 +915,11 @@ footer{                                      /* футер */
 }
 
 
-#banner{                                     /* футер реклама. красный баннер */
-    width: /*1440px;*/calc(99vw);
-    height: 100.33px;
+#banner{                                    /*футер реклама. красный баннер */
+    /* width: 1440px;
+    width: calc(100vw);
+    height: 100.33px; */
+    width: 100%;
 }
 
 
@@ -1005,7 +1014,8 @@ footer{                                      /* футер */
     display: flex;
     flex-wrap: wrap;
     gap: 5px 321px;
-    width: /*1288px;*/calc(89.4vw);
+    /* width: 1288px; */
+    /* width: calc(89.4vw); */
     /* height: 40px; */
     padding-left: calc(12.9vw - 36px);/*150px;*/
     align-items: center;
@@ -1050,7 +1060,8 @@ footer{                                      /* футер */
 
 
 .headerstr2{                   /* хедер строка2 */
-    width: /*1288px;*/calc(89.4vw);
+    /* width: 1288px;
+    width: calc(89.4vw); */
     padding-left: calc(12.9vw - 36px);/*150px;*/
     padding-top: 7px;
     padding-bottom: 7.22px;
@@ -1129,7 +1140,8 @@ footer{                                      /* футер */
     padding-top: 11px;
     padding-bottom: 11px;
     background: #F5F5F5;
-    width: /*1440px;*/calc(99vw);
+    /* width: 1440px;
+    width: calc(100vw); */
 }
 .headerstr3{                   /* хедер строка3 */
     display: flex;
