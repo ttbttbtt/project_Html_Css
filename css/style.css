@@ -149,11 +149,11 @@ section{
 .dangls{
     display: flex;
     flex-wrap: wrap;/*??????????*/
-    gap: /*calc(1.4vw);*/20px;
+    gap: calc(1.4vw);/*20px;*/
     position: absolute;
     /* left: 110px; */
     /* top: 280px; */
-    left: 17%;
+    left: 14%;
     top: 74%;
 }
 @media (max-width: 1150px){
@@ -252,7 +252,7 @@ section{
 .neobxtds{
     display: flex;
     flex-wrap: wrap;
-    gap: /*31px;*/calc(2.3vw - 2px);
+    gap: /*31px;*/calc(2vw - 5px);
 }
 .neobxgr{
     display: flex;
@@ -281,12 +281,12 @@ section{
     line-height: 150%;
 }
 .sv{
-    width: 174px;
-    height: 136px;
+    width: /*174px;*/calc(12.4vw - 5px);
+    /* height: 136px; */
 }
 .oil{
-    width: 174px;
-    height: 282px;
+    width: /*174px;*/calc(12.4vw - 5px);
+    /* height: 282px; */
 }
 
 .litr{
@@ -933,7 +933,7 @@ footer{                                      /* футер */
 .halfleft{                                   /* футер пункты меню */
     display: flex;
     flex-wrap: wrap;
-    gap: 123px;
+    gap: /*123px;*/calc(9.2vw - 9px);
 }
 .halfleft1{                                  /* футер пункты меню столбец1 */
     display: flex;
@@ -950,7 +950,7 @@ footer{                                      /* футер */
 .halfright{                                  /* футер соцсети и эмблема */
     display: flex;
     flex-wrap: wrap;
-    gap: 208px;
+    gap: /*208px;*/calc(8.3vw + 3px);
 }
 .halfright1{                                 /* футер соцсети */
     display: flex;
@@ -987,20 +987,20 @@ footer{                                      /* футер */
     margin-bottom: 7px;
     display: flex;
     flex-wrap: wrap;
-    gap: 5px 35px;
+    gap: 5px /*35px*/calc(2.2vw + 3px);
 }
-.footend span:first-child{
+.footend span{
+    height: 18px;
+}
+/* .footend span:first-child{
     width: 555px;
-    height: 18px;
-}
+} */
 .footend span:nth-child(2){
-    width: 263px;
-    height: 18px;
+    /* width: 263px; */
     text-align: right;
 }
 .footend span:nth-child(3){
-    width: 275px;
-    height: 18px;
+    /* width: 275px; */
     text-align: right;
 }
 
