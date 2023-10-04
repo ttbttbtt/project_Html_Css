@@ -92,10 +92,10 @@ section{
     background: var(--Linear, linear-gradient(90deg, #4CB8C4 0%, #3CD3AD 100%));
     /* width: 1140px;
     width: calc(100vw); */
-    padding-top: /*calc(3.5vw);*/49px;
-    padding-bottom: /*calc(11.6vw - 1px);*/166px;
+    padding-top: calc(3.5vw);/*49px;*/
+    padding-bottom: calc(11.6vw - 1px);/*166px;*/
 
-    margin-bottom: /*calc(5.4vw);*/77px;
+    margin-bottom: calc(5.4vw);/*77px;*/
     position: relative;
 }
 .lightbiryuza{
@@ -157,6 +157,9 @@ section{
     top: 74%;
 }
 @media (max-width: 1150px){
+    .biryuza{
+        padding-bottom: 50px;
+    }
     .dangls{
         position: static;
         margin-left: /*166px;*/calc(14.3vw - 41px);
