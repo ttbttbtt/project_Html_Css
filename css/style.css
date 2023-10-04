@@ -347,9 +347,9 @@ section{
 /*------------------------------ экран2 ------------------------------*/
 .sec2common{
     display: flex;
-    flex-wrap: wrap;
-    gap: 26px;
-    padding-left: 152px;
+    flex-wrap: wrap-reverse;
+    gap: /*26px;*/calc(1.9vw - 1px);
+    padding-left: /*150px;*/calc(12.9vw - 36px);
 }
 /*-- левая часть --*/
 .sec2left{
@@ -427,7 +427,7 @@ section{
 .resetfltr{
     display: flex;
     flex-wrap: nowrap;
-    gap: 10px;
+    gap: /*10px;*/calc(0.6vw + 1px);
     font-size: 14px;
 }
 
@@ -455,13 +455,13 @@ input{
 .sec2right .kolodki{
     display: flex;
     flex-wrap: wrap;
-    gap: 11px;
+    gap: /*11px;*/calc(0.5vw);
     margin-top: 15px;
 }
 .sec2right .kolodka{
-    width: 228px;
-    height: 287px;
-    padding: 20px;
+    width: /*228px;*/calc(16.8vw - 14px);
+    /* height: 287px; */
+    padding: /*20px;*/calc(1.4vw);
     display: flex;
     flex-direction: column;
 }
@@ -469,8 +469,8 @@ input{
     background: rgba(31, 175, 172, 0.10);
 }
 .sec2right .kol{
-    width: 188px;
-    height: 119px;
+    width: /*188px;*/calc(14.1vw - 15px);
+    /* height: 119px; */
 }
 
 .sec2right .cena{
@@ -482,14 +482,14 @@ input{
 .basket{
     border-radius: 3px;
     background: #00766C;
-    width: 49.195px;
+    width: /*49px;*/calc(3.6vw - 2px);
 }
 
 
 /*------------------------------ экран3 ------------------------------*/
 .sec3common{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     gap: /*26px;*/calc(1.9vw - 1px);
     padding-left: /*150px;*/calc(12.9vw - 36px);
 }
