@@ -93,10 +93,12 @@ section{
     /* width: 1140px;
     width: calc(100vw); */
     padding-top: calc(3.5vw);/*49px;*/
-    padding-bottom: calc(11.6vw - 1px);/*166px;*/
+    /* padding-bottom: 166px; */
+    /* padding-bottom: calc(11.6vw - 1px); */
 
-    margin-bottom: calc(5.4vw);/*77px;*/
-    position: relative;
+    margin-bottom: 77px;
+    /* margin-bottom: calc(5.4vw); */
+    /* position: relative; */
 }
 .lightbiryuza{
     border-radius: /*calc(1.4vw);*/20px;
@@ -113,6 +115,7 @@ section{
 }
 .lightbiryuza h1, .lightbiryuza h4{
     text-transform: uppercase;
+    text-align: center;
 }
 .sec1form{
     display: flex;
@@ -150,20 +153,25 @@ section{
     display: flex;
     flex-wrap: wrap;/*??????????*/
     gap: calc(1.4vw);/*20px;*/
-    position: absolute;
+    /* position: absolute; */
     /* left: 110px; */
     /* top: 280px; */
     left: 14%;
     top: 74%;
+    justify-content: center;
+    margin-bottom: /*-30px;*/calc(1.8vw + 4px);
 }
 @media (max-width: 1150px){
     .biryuza{
         padding-bottom: 50px;
     }
+    /*
     .dangls{
         position: static;
-        margin-left: /*166px;*/calc(14.3vw - 41px);
+        margin-left: 166px;
+        margin-left: calc(14.3vw - 41px);
     }
+    */
 }
 .dangl{
     display: flex;
@@ -185,8 +193,8 @@ section{
 .dangl div{
     text-align: center;
     font-size: 14px;
-    width: 205px;
-    height: 32px;
+    width: 205px;/*calc(1.4vw + 11px);*/
+    height: 32px;/*calc(2.1vw + 1px);*/
 }
 
 .hits{
@@ -351,7 +359,8 @@ section{
 .sec2common{
     display: flex;
     flex-wrap: wrap-reverse;
-    gap: /*26px;*/calc(1.9vw - 1px);
+    /* gap: 26px; */
+    gap: calc(1.9vw - 1px);
     padding-left: /*150px;*/calc(12.9vw - 36px);
 }
 /*-- левая часть --*/
@@ -442,8 +451,15 @@ input{
 .navigation{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     flex-shrink: 0;
     gap: 4px;
+}
+.sec2right{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 800px;
 }
 /*------------------------------------------------*/
 .sec2right h1{
@@ -458,13 +474,16 @@ input{
 .sec2right .kolodki{
     display: flex;
     flex-wrap: wrap;
-    gap: /*11px;*/calc(0.5vw);
+    gap: 11px;
+    /* gap: calc(0.5vw); */
     margin-top: 15px;
 }
 .sec2right .kolodka{
-    width: /*228px;*/calc(16.8vw - 14px);
-    /* height: 287px; */
-    padding: /*20px;*/calc(1.4vw);
+    width: 228px;
+    /* width: calc(16.8vw - 14px); */
+    height: 287px;
+    /* padding: calc(1.4vw); */
+    padding: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -472,8 +491,9 @@ input{
     background: rgba(31, 175, 172, 0.10);
 }
 .sec2right .kol{
-    width: /*188px;*/calc(14.1vw - 15px);
-    /* height: 119px; */
+    width: 188px;
+    /* width: calc(14.1vw - 15px); */
+    height: 119px;
 }
 
 .sec2right .cena{
@@ -485,7 +505,8 @@ input{
 .basket{
     border-radius: 3px;
     background: #00766C;
-    width: /*49px;*/calc(3.6vw - 2px);
+    width: 49px;
+    /* width: calc(3.6vw - 2px); */
 }
 
 
