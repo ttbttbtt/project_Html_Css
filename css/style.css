@@ -474,8 +474,8 @@ input{
 .sec2right .kolodki{
     display: flex;
     flex-wrap: wrap;
-    gap: 11px;
-    /* gap: calc(0.5vw); */
+    /* gap: 11px; */
+    gap: calc(0.5vw + 3px);
     margin-top: 15px;
 }
 .sec2right .kolodka{
@@ -517,8 +517,10 @@ input{
     gap: /*26px;*/calc(1.9vw - 1px);
     padding-left: /*150px;*/calc(12.9vw - 36px);
 }
-/*-- левая часть как на экране2 !!! --*/
-
+/*-- левая часть как на экране2, но!!! --*/
+.sec3 .sec2left{
+    padding-top: 30px;
+}
 
 
 /*-- правая часть --*/
@@ -591,7 +593,7 @@ input{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 .sec3rightright .kolodka{
     padding: 10px;
